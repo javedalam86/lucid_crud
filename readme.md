@@ -1,3 +1,12 @@
+## Installation 
+
+git clone https://github.com/javedalam86/lucid_crud.git
+Create .env from .example.env
+Set database connection in env and other required information
+run composer update to generate library files
+run php artisan migrate 
+
+
 ## Lucid
 
 The Lucid Architecture is a software architecture that consolidates code-base maintenance as the application scales,
