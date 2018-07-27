@@ -11,6 +11,91 @@ run composer update to generate library files
 run php artisan migrate 
 run  php artisan passport:install
 
+## CRUD
+
+Create user
+
+http://lucidcrud.com-dev/api/v1/users/create  with POST
+
+request: 
+
+{
+	"name":"Naved G",
+	"email":"javedalam8335@gmail.com",
+	"password":"123456",
+	"password_confirmation":"123456"
+}
+
+Response:
+
+{
+    "status": "SUCCESS",
+    "code": 200,
+    "response": "user added successfully"
+}
+
+Show User
+
+http://lucidcrud.com-dev/api/v1/users/view/4   With GET
+
+Rsponse : 
+
+{
+    "status": "SUCCESS",
+    "code": 200,
+    "response": {
+        "id": 4,
+        "name": "Naved G",
+        "email": "javedalam855@gmail.com",
+        "created_at": "2018-06-14 05:53:23",
+        "updated_at": "2018-06-14 05:53:23"
+    }
+}
+
+List User 
+
+http://lucidcrud.com-dev/api/v1/users  With GET
+
+{
+    "status": "SUCCESS",
+    "code": 200,
+    "response": [
+        {
+            "id": 1,
+            "name": "Javed",
+            "email": "javedalam86@gmail.com",
+            "created_at": "2018-06-14 05:28:10",
+            "updated_at": "2018-06-14 05:50:40"
+        },
+        {
+            "id": 2,
+            "name": "Naved G",
+            "email": "javedalam85@gmail.com",
+            "created_at": "2018-06-14 05:48:40",
+            "updated_at": "2018-06-14 05:48:40"
+        }
+    ]
+}
+
+Update User
+
+http://lucidcrud.com-dev/api/v1/users/1/update  with PUT method
+
+Request : 
+
+{
+	"name":"Javed",
+	"email":"javedalam8666@gmail.com",
+	"password":"123456"
+}
+
+Response :
+
+{
+    "status": "SUCCESS",
+    "code": 200,
+    "response": "user update successfully"
+}
 
 ## Lucid
 
