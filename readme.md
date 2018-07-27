@@ -9,6 +9,7 @@ Set database connection in env and other required information
 run composer update to generate library files
 
 run php artisan migrate 
+run  php artisan passport:install
 
 
 ## Lucid
